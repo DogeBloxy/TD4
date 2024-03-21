@@ -5,19 +5,19 @@ $password = 'Blablala5';
 $message = '';
 
 if (strlen($password) < 8) {
-    $message = 'mot de passe est trop court, le mot de passe doit comporter au moins 8 caractères';
+    $message = 'Mot de passe est trop court, le mot de passe doit comporter au moins 8 caractères.';
     $error = true;
 } elseif (!preg_match('/[A-Z]+/',$password)) {
-    $message = 'Le mot de passe doit comporter au moins une majuscule';
+    $message = 'Le mot de passe doit comporter au moins une majuscule.';
     $error = true;
 } elseif (!preg_match('/[a-z]+/',$password)) {
-    $message = 'Le mot de passe doit comporter au moins une minuscule';
+    $message = 'Le mot de passe doit comporter au moins une minuscule.';
     $error = true;
 } elseif (!preg_match('/[0-9]+/',$password)) {
-    $message = 'Le mot de passe doit comporter au moins un chiffre';
+    $message = 'Le mot de passe doit comporter au moins un chiffre.';
     $error = true;
 } else {
-    $message = 'Le mot de passe est valide';
+    $message = 'Le mot de passe est valide.';
 }
 ?>
 
